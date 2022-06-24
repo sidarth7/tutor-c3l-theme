@@ -15,10 +15,10 @@
     <footer>
       <div class="row">
         <div class="col-md-9">
-          {% if INDIGO_FOOTER_NAV_LINKS %}
+          {% if C3LTHEME_FOOTER_NAV_LINKS %}
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              {% for link in C3LTHEME_FOOTER_NAV_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -37,10 +37,10 @@
               % endif
           </p>
 
-          {% if INDIGO_FOOTER_LEGAL_LINKS %}
+          {% if C3LTHEME_FOOTER_LEGAL_LINKS %}
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+              {% for link in C3LTHEME_FOOTER_LEGAL_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -57,9 +57,9 @@
           % if not hide_openedx_link:
             <div class="footer-about-openedx">
               <p>
-                <a href="https://docs.tutor.overhang.io" rel="noopener" target="_blank">
-                  <img src="${static.url('images/tutor-logo.png')}" width="140" />
-                </a>
+                ## <a href="https://docs.tutor.overhang.io" rel="noopener" target="_blank">
+                ##   <img src="${static.url('images/tutor-logo.png')}" width="140" />
+                ## </a>
                 <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
                   <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
                 </a>
@@ -81,10 +81,10 @@
       % endif
     >
       <div class="colophon">
-        {% if INDIGO_FOOTER_NAV_LINKS %}
+        {% if C3LTHEME_FOOTER_NAV_LINKS %}
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              {% for link in C3LTHEME_FOOTER_NAV_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
@@ -121,10 +121,10 @@
               % endif
           </p>
 
-        {% if INDIGO_FOOTER_LEGAL_LINKS %}
+        {% if C3LTHEME_FOOTER_LEGAL_LINKS %}
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+            {% for link in C3LTHEME_FOOTER_LEGAL_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
