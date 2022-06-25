@@ -13,7 +13,7 @@ def load_readme():
 def load_about():
     about = {}
     with io.open(
-        os.path.join(HERE, "tutorindigo", "__about__.py"),
+        os.path.join(HERE, "c3ltheme", "__about__.py"),
         "rt",
         encoding="utf-8",
     ) as f:
@@ -25,23 +25,23 @@ ABOUT = load_about()
 
 
 setup(
-    name="tutor-indigo",
+    name="c3ltheme",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-indigo",
+    url="https://github.com/sidarth7/tutor-c3l-theme",
     project_urls={
         "Code": "https://github.com/overhangio/tutor-indigo",
         "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
         "Community": "https://discuss.overhang.io",
     },
     license="AGPLv3",
-    author="Overhang.IO",
-    description="Indigo theme plugin for Tutor",
+    author="Overhang.IO, Sidarth",
+    description="C3L theme plugin for Tutor",
     long_description=load_readme(),
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.7",
     install_requires=["tutor>=14.0.0,<15.0.0"],
-    entry_points={"tutor.plugin.v1": ["indigo = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["c3ltheme = tutorc3ltheme.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
